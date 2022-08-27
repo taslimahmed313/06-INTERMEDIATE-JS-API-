@@ -1,0 +1,10 @@
+#country-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+}
+.country {
+  border: 2px solid orangered;
+  margin: 5px;
+  padding: 5px;
+}
