@@ -26,7 +26,7 @@
             aria-label=""
             placeholder="Search Your Phone"
           />
-          <button id="btn-search" class="btn btn-primary">Search</button>
+          <button id="btn-search" class="btn btn-primary mb-3">Search</button>
         </div>
       </section>
       <!-- Search Phone Display Result....... -->
@@ -35,6 +35,65 @@
           id="phones-container"
           class="row row-cols-1 row-cols-md-3 g-4 mt-5"
         ></div>
+        <div id="no-phone-message" class="mt-4 d-none">
+          <h3 class="text-center text-info">
+            No Phone Found !! Please Search Again.
+          </h3>
+        </div>
+        <div id="view-all" class="text-center d-none">
+          <button id="btn-view-all" class="bg-info text-white border-0 mb-5">
+            View All
+          </button>
+        </div>
+      </section>
+      <!-- Loader or Spinner -->
+      <section id="loader" class="d-none">
+        <div
+          style="height: 200px"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </section>
+      <!-- Modal Section -->
+      <section>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div id="phone-details" class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script
