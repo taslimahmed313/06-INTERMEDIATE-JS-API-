@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Check List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="random-user"></div>
+      <div id="comment-details"></div>
+      <section class="container mt-5">
+        <div id="photo-details-container"></div>
+        <div id="photo-container" class="row row-cols-lg-3 g-5 mt-5"></div>
+      </section>
+
+      <button onclick="loadComment('${comment.id}')">Details</button>
+      <div id="comment-container"></div>
+    </main>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/api.js"></script> -->
+    <script src="./js/api-overall.js"></script>
+  </body>
+</html>
