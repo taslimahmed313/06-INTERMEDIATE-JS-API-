@@ -27,7 +27,7 @@ const displayCountries = countries =>{
 const LoadCountryDetails = (code) =>{
   // https://restcountries.com/v3.1/alpha/{code}
   const url = `https://restcountries.com/v3.1/alpha/${code}`;
-//   console.log(code);
+  // console.log(code);
     fetch(url)
     .then(res => res.json())
     .then(data => displayCountryDetails(data[0]))
